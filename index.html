@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serenity Stays - Luxury Heritage Hotel</title>
-    <link rel="stylesheet" href="css/main.css" />
     <style>
         body {
             margin: 0;
@@ -56,7 +55,6 @@
             100% { transform: rotate(360deg); }
         }
     </style>
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fserenitys4844back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
 </head>
 <body>
     <div class="loading-container">
@@ -66,10 +64,9 @@
     </div>
 
     <script>
-        // Redirect to homepage after 2 seconds
         setTimeout(function() {
-            window.location.href = 'pages/homepage.html';
-        }, 2000);
+            window.location.replace('pages/homepage.html');
+        }, 500);
     </script>
 <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>

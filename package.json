@@ -11,9 +11,11 @@
     "tailwindcss-fluid-type": "^2.0.7"
   },
   "scripts": {
-    "build:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css",
+    "clean": "rm -rf dist",
+    "build:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css --minify",
     "watch:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css --watch",
-    "dev": "npm run watch:css"
+    "dev": "npm run watch:css",
+    "build": "npm run clean && npm run build:css && mkdir -p dist/css && cp index.html dist/index.html && cp css/main.css dist/css/main.css"
   },
   "author": "",
   "license": "MIT",
